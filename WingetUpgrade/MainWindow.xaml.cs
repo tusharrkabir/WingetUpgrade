@@ -182,7 +182,7 @@ namespace WingetUpgrade
             {
                 Process.Start(new ProcessStartInfo
                 {
-                    FileName = "https://github.com/microsoft/winget-cli",
+                    FileName = "https://github.com/tusharrkabir/WingetUpgrade",
                     UseShellExecute = true
                 });
             }
