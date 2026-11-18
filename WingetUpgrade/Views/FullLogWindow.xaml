@@ -1,0 +1,50 @@
+<Window x:Class="WingetUpgrade.Views.FullLogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Winget Upgrade - Full Execution Log"
+        Height="550" Width="800"
+        WindowStartupLocation="CenterOwner"
+        Background="#0D0F12"
+        Foreground="#FFFFFF">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Text="Winget Execution &amp; Output Log"
+                   FontSize="18" FontWeight="Bold"
+                   Foreground="#FFFFFF" Margin="0,0,0,12" />
+
+        <!-- Log Content -->
+        <Border Grid.Row="1"
+                Background="#0A0C0F"
+                BorderBrush="#222630"
+                BorderThickness="1"
+                CornerRadius="8"
+                Padding="12">
+            <TextBox x:Name="LogTextBox"
+                     IsReadOnly="True"
+                     TextWrapping="Wrap"
+                     VerticalScrollBarVisibility="Auto"
+                     HorizontalScrollBarVisibility="Auto"
+                     Background="Transparent"
+                     Foreground="#4ADE80"
+                     BorderThickness="0"
+                     FontFamily="Consolas, Cascadia Code, Courier New"
+                     FontSize="12" />
+        </Border>
+
+        <!-- Footer actions -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,14,0,0">
+            <Button Content="Copy Log" Width="100" Height="34" Margin="0,0,10,0"
+                    Style="{StaticResource DarkBorderButtonStyle}"
+                    Click="CopyButton_Click" />
+            <Button Content="Close" Width="100" Height="34"
+                    Style="{StaticResource SolidGreenButtonStyle}"
+                    Click="CloseButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

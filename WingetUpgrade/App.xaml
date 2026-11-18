@@ -1,0 +1,29 @@
+<Application x:Class="WingetUpgrade.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WingetUpgrade"
+             xmlns:converters="clr-namespace:WingetUpgrade.Converters"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <converters:BoolToVisibilityConverter x:Key="BoolToVis" />
+            <converters:BoolToVisibilityConverter x:Key="InverseBoolToVis" Invert="True" />
+            <converters:InverseBoolConverter x:Key="InverseBool" />
+            <converters:GreaterThanZeroConverter x:Key="GreaterThanZeroToVis" />
+            <converters:ActiveTabToBackgroundConverter x:Key="ActiveTabToBg" />
+            <converters:ActiveTabToForegroundConverter x:Key="ActiveTabToFg" />
+            <converters:ActiveTabToIndicatorVisibilityConverter x:Key="ActiveTabToIndicator" />
+            <converters:CategoryChipBgConverter x:Key="CategoryChipBg" />
+            <converters:CategoryChipFgConverter x:Key="CategoryChipFg" />
+            <converters:StringNotEmptyToVisibilityConverter x:Key="StringNotEmptyToVis" />
+            <converters:ZeroToVisibilityConverter x:Key="ZeroToVis" />
+            <converters:ZeroToVisibilityConverter x:Key="NonZeroToVis" Invert="True" />
+            <converters:IconKeyToGeometryConverter x:Key="IconKeyToGeometry" />
+            <converters:IconKeyToBrushConverter x:Key="IconKeyToBrush" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

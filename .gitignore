@@ -1,0 +1,44 @@
+## Visual Studio / C# / .NET .gitignore
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache and settings
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+*.pidb
+*.booproj
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userprofile
+*.docstates
+
+# Windows temporary files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Dotnet temp files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.intermediate.manifest
