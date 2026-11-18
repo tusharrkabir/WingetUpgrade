@@ -4,6 +4,10 @@ A sleek, hardware-accelerated desktop client for **Windows Package Manager (`win
 
 It transforms the command-line winget experience into a fast, responsive, and visually modern dashboard with real-time logs, process control, and package management.
 
+<p align="center">
+  <img src="assets/screenshots/dashboard.jpg" alt="Winget Upgrade Dashboard Preview" width="100%" />
+</p>
+
 ---
 
 ## 📸 Key Capabilities
@@ -133,6 +137,8 @@ dotnet publish WingetUpgrade/WingetUpgrade.csproj -c Release -r win-x64 --self-c
 ## 📁 Repository Structure
 
 ```
+├── assets/
+│   └── screenshots/       # Dashboard & UI preview images
 ├── WingetUpgrade/
 │   ├── Controls/          # Custom UI elements (e.g., CircularProgressBar)
 │   ├── Converters/        # Value converters for boolean/visibility bindings
